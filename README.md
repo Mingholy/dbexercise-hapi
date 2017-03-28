@@ -3,6 +3,9 @@
 Online demo available on [Hapi REST Example](http://123.206.110.199:3100/)
 **Valid before 2017-04-27**
 
+## Require
+Node.js 6.0+
+
 ## Instructions
 1. Install dependencies:
 ```
