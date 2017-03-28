@@ -1,0 +1,17 @@
+.w7 {
+    width: 70%;
+}
+.inline-control {
+    display: inline;
+}
+.center-control {
+    text-align: center;
+}
+#header {
+    width: 100%;
+    text-align: center;
+}
+#me {
+    color:#ccc;
+    float: right;
+}

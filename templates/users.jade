@@ -1,0 +1,58 @@
+doctype html
+html
+    head
+        title Hapi REST实例：学籍管理小系统
+        link(href="/stylesheets/bootstrap.min.css",rel="stylesheet")
+        link(href="/stylesheets/users.css",rel="stylesheet")
+    body
+        nav.navbar.navbar-default
+            span.inline-control
+                h2#header 用Hapi重构Express实例：学籍管理小系统
+                p#me @Mingholy
+        div.container-fluid
+            div.row
+                div.col-md-4.center-control
+                    form.form-inline(action="/task1/stuinfo")
+                        div.form-group
+                            input.form-control(type="text" placeholder="查询学生的选课和成绩" name="name")
+                        button.btn.btn-primary(type="submit") 查询
+                div.col-md-4.center-control
+                    form.form-inline(action="/task1/creditsum")
+                        div.form-group
+                            input.form-control(type="text" placeholder="查询学生所选学分总数" name="name")
+                        button.btn.btn-primary(type="submit") 查询
+                div.col-md-4.center-control
+                    form.form-inline(action="/task2")
+                        div.form-group
+                            input.form-control(type="text" placeholder="查询课程的平均成绩" name="name")
+                        button.btn.btn-primary(type="submit") 查询
+            br                        
+            div.row
+                div.col-md-6.center-control.btn-lg.btn-block
+                    a.btn.btn-default(href="/task3" role="button") 各门课按平均成绩排序
+                div.col-md-6.center-control.btn-lg.btn-block
+                    a.btn.btn-default(href="/task4" role="button") 显示所有的课程名和讲课教师名
+
+            hr
+
+            div.row
+
+                div.col-md-8.col-md-offset-2
+                    table.table.table-striped
+                        thead
+                            tr
+                            if JSON.stringify(ret) == '[]' || typeof ret == 'undefined'
+                                h4 没有查询到相关结果！
+                            else
+                                each  key, value in ret[0]
+                                    th #{value}
+
+                        tbody
+                         if typeof ret !== 'undefined'
+                            each item in ret
+                                tr
+                                    each key in item
+                                        td #{key}
+            footer
+                            
+

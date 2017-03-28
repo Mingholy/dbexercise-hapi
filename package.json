@@ -1,0 +1,21 @@
+{
+  "name": "dbexercise-hapi",
+  "version": "1.0.0",
+  "description": "A SPA using hapi implementing REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "mingholy",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.1.0",
+    "hapi-plugin-mysql": "^5.0.0",
+    "hoek": "^4.1.0",
+    "inert": "^4.1.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta11",
+    "vision": "^4.1.1"
+  }
+}
