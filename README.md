@@ -1,4 +1,7 @@
 # Refractor a small express project implementing part of REST api using Hapi
+## Online Demo
+Online demo available on [Hapi REST Example](http://123.206.110.199:3100/)
+**Valid before 2017-04-27**
 
 ## Instructions
 1. Install dependencies:
@@ -19,6 +22,10 @@ options: {
 4. Start server:
 ```
 node index.js
+```
+or
+```
+npm start
 ```
 5. Visit:
 ```
